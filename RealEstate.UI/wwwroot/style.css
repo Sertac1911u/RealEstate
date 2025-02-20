@@ -1,0 +1,239 @@
+/* Global Styles */
+*, *::before, *::after {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Mode Styles */
+.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark .bg-white {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark .text-gray-700 {
+    color: #e5e5e5;
+}
+
+.dark .bg-gray-50 {
+    background-color: #1a1a1a;
+}
+
+.dark .text-gray-600 {
+    color: #d1d1d1;
+}
+
+.dark .bg-blue-600 {
+    background-color: #3b82f6;
+}
+
+.dark .hover\:bg-blue-700:hover {
+    background-color: #60a5fa;
+}
+
+/* Search Overlay Styles */
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.search-overlay.active {
+    display: flex;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal.active {
+    display: flex;
+}
+
+/* Animation Styles */
+.rotate-center {
+    animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Sun and Moon Transition */
+.sun-moon-transition {
+    transition: transform 0.5s ease-in-out; /* Transition for smooth rotation */
+}
+
+.dark .sun-moon-transition {
+    transform: rotate(360deg); /* Rotate the moon icon */
+}
+
+/* Slider Styles */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 10px 0;
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.image-gallery::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.gallery-image {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s ease;
+}
+
+.gallery-image:hover {
+    border-color: #3b82f6;
+}
+
+/* Fullscreen Image Modal Styles */
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-modal.active {
+    display: flex;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+    .real-estate-info {
+        flex: 70%;
+        padding-right: 20px;
+    }
+    .agent-info {
+        flex: 30%;
+    }
+}
+
+/* Ad Banner Styles */
+.ad-banner {
+    background-color: #f0f0f0; /* or any desired background */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Password Toggle Styles */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    cursor: pointer;
+    color: #777;
+}
+
+/* Search Icon Style */
+.search-icon {
+    cursor: pointer;
+}

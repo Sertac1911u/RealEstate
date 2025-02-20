@@ -1,0 +1,231 @@
+﻿@page "/"
+@page "/home"
+
+<PageTitle>Home</PageTitle>
+
+<div class="relative h-screen">
+    <img src="https://picsum.photos/1920/1080" alt="Hero Image" class="w-full h-full object-cover opacity-70">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <h1 class="text-4xl md:text-6xl text-white font-bold mb-8 text-center px-4">Find Your Dream Home</h1>
+        <div class="w-full max-w-4xl px-4">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="flex flex-wrap gap-4">
+                    <input type="text" placeholder="Location" class="flex-1 p-2 border rounded hover:border-blue-500 focus:border-blue-600 focus:outline-none">
+                    <select class="p-2 border rounded hover:border-blue-500 focus:border-blue-600 focus:outline-none">
+                        <option>Property Type</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                    </select>
+                    <button class="bg-blue-600 text-white px-8 py-2 rounded hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-0.5">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-8">Popular Cities</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <!-- Istanbul -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=1" alt="Istanbul" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Istanbul</h3>
+                <p>234 Properties</p>
+            </div>
+        </div>
+        <!-- Ankara -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=2" alt="Ankara" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Ankara</h3>
+                <p>186 Properties</p>
+            </div>
+        </div>
+        <!-- Izmir -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=3" alt="Izmir" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Izmir</h3>
+                <p>167 Properties</p>
+            </div>
+        </div>
+        <!-- Antalya -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=4" alt="Antalya" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Antalya</h3>
+                <p>145 Properties</p>
+            </div>
+        </div>
+        <!-- Bursa -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=5" alt="Bursa" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Bursa</h3>
+                <p>120 Properties</p>
+            </div>
+        </div>
+        <!-- Adana -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=6" alt="Adana" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Adana</h3>
+                <p>98 Properties</p>
+            </div>
+        </div>
+        <!-- Mersin -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=7" alt="Mersin" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Mersin</h3>
+                <p>85 Properties</p>
+            </div>
+        </div>
+        <!-- Kocaeli -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=8" alt="Kocaeli" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Kocaeli</h3>
+                <p>72 Properties</p>
+            </div>
+        </div>
+        <!-- Denizli -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=118" alt="Denizli" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Denizli</h3>
+                <p>72 Properties</p>
+            </div>
+        </div>
+        <!-- Sakarya -->
+        <div class="relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl">
+            <img src="https://picsum.photos/400/300?random=228" alt="Sakarya" class="w-full h-48 object-cover group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold">Sakarya</h3>
+                <p>72 Properties</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+    <h2 class="text-3xl font-bold mb-8">Featured Listings</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Property Cards (6 examples) -->
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=10" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">For Sale</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$450,000</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Modern Villa with Pool</h3>
+                <p class="text-gray-600 mb-4">Bebek, Istanbul</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>4 Beds</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>3 Baths</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>250m²</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=11" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">For Rent</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$2,500/mo</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Luxury Apartment in City Center</h3>
+                <p class="text-gray-600 mb-4">Çankaya, Ankara</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>2 Beds</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>2 Baths</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>110m²</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=12" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">For Sale</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$320,000</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Sea View Condo</h3>
+                <p class="text-gray-600 mb-4">Konak, Izmir</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>3 Beds</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>2 Baths</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>180m²</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=13" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">For Rent</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$1,800/mo</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Modern Apartment</h3>
+                <p class="text-gray-600 mb-4">Muratpaşa, Antalya</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>1 Bed</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>1 Bath</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>75m²</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=14" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">For Sale</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$680,000</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Luxury Villa</h3>
+                <p class="text-gray-600 mb-4">Nilüfer, Bursa</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>5 Beds</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>4 Baths</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>350m²</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1">
+            <div class="relative">
+                <img src="https://picsum.photos/400/300?random=15" alt="Property" class="w-full h-64 object-cover hover:scale-105">
+                <span class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">For Rent</span>
+                <span class="absolute top-4 right-4 bg-white text-gray-800 px-3 py-1 rounded shadow hover:shadow-lg">$1,200/mo</span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600">Cozy Apartment</h3>
+                <p class="text-gray-600 mb-4">Seyhan, Adana</p>
+                <div class="flex justify-between text-gray-500">
+                    <span class="hover:text-blue-600"><i class="fas fa-bed mr-2"></i>2 Beds</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-bath mr-2"></i>1 Bath</span>
+                    <span class="hover:text-blue-600"><i class="fas fa-ruler-combined mr-2"></i>90m²</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

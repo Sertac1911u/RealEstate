@@ -1,0 +1,172 @@
+﻿@page "/listing"
+<div class="max-w-7xl mx-auto px-4 py-24">
+    <h1 class="text-3xl font-bold mb-8">Property Listings</h1>
+
+    <div class="bg-white p-4 rounded-lg shadow-md mb-8">
+        <div class="flex flex-wrap gap-4 items-center">
+            <div class="flex-1 min-w-[200px]">
+                <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                <input type="text" id="location" class="mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div class="flex-1 min-w-[150px]">
+                <label for="propertyType" class="block text-sm font-medium text-gray-700">Property Type</label>
+                <select id="propertyType" class="mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">All</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                </select>
+            </div>
+            <div class="flex-1 min-w-[150px]">
+                <label for="priceRange" class="block text-sm font-medium text-gray-700">Price Range</label>
+                <select id="priceRange" class="mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Any</option>
+                    <option value="0-500000">$0 - $500,000</option>
+                    <option value="500000-1000000">$500,000 - $1,000,000</option>
+                    <option value="1000000+">$1,000,000+</option>
+                </select>
+            </div>
+            <div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-6 rounded">
+                    Filter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=20" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Luxury Apartment in City Center</h3>
+                <p class="text-gray-600 mb-2">Çankaya, Ankara</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$2,500/mo</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 2 Beds</div>
+                    <div><i class="fas fa-bath mr-1"></i> 2 Baths</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 110m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+
+        <!-- Listing Card 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=21" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Modern Villa with Pool</h3>
+                <p class="text-gray-600 mb-2">Bebek, Istanbul</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$450,000</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 4 Beds</div>
+                    <div><i class="fas fa-bath mr-1"></i> 3 Baths</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 250m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+
+        <!-- Listing Card 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=22" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Sea View Condo</h3>
+                <p class="text-gray-600 mb-2">Konak, Izmir</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$320,000</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 3 Beds</div>
+                    <div><i class="fas fa-bath mr-1"></i> 2 Baths</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 180m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+        <!-- Listing Card 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=23" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Modern Apartment</h3>
+                <p class="text-gray-600 mb-2">Muratpaşa, Antalya</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$1,800/mo</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 1 Bed</div>
+                    <div><i class="fas fa-bath mr-1"></i> 1 Bath</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 75m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+        <!-- Listing Card 5 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=24" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Luxury Villa</h3>
+                <p class="text-gray-600 mb-2">Nilüfer, Bursa</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$680,000</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 5 Beds</div>
+                    <div><i class="fas fa-bath mr-1"></i> 4 Baths</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 350m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+        <!-- Listing Card 6 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-64 object-cover" src="https://picsum.photos/400/300?random=25" alt="Listing Image">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">Cozy Apartment</h3>
+                <p class="text-gray-600 mb-2">Seyhan, Adana</p>
+                <p class="text-gray-800 font-bold text-lg mb-2">$1,200/mo</p>
+                <div class="flex justify-between text-gray-500 text-sm">
+                    <div><i class="fas fa-bed mr-1"></i> 2 Beds</div>
+                    <div><i class="fas fa-bath mr-1"></i> 1 Bath</div>
+                    <div><i class="fas fa-ruler-combined mr-1"></i> 90m²</div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <a href="#" class="text-blue-600 hover:underline">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination (Optional) -->
+    <div class="mt-12 flex justify-center">
+        <nav class="relative z-0 inline-flex rounded-md shadow-sm" aria-label="Pagination">
+            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                <span class="sr-only">Previous</span>
+                <!-- Heroicon name: solid/chevron-left -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-300 text-sm font-medium text-white hover:bg-blue-50 hover:text-gray-700">
+                1
+            </a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                2
+            </a>
+            <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                3
+            </a>
+            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                <span class="sr-only">Next</span>
+                <!-- Heroicon name: solid/chevron-right -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </nav>
+    </div>
+</div>

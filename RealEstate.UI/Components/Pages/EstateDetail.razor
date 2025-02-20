@@ -1,0 +1,175 @@
+﻿@page "/detail"
+
+<div class="max-w-7xl mx-auto px-4 py-24">
+
+    <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-800"><i class="fas fa-tag mr-1"></i> Satılık</span>
+                <span class="flex items-center text-gray-600"><i class="far fa-clock mr-1"></i> 2 gün önce</span>
+                <span class="flex items-center text-gray-600"><i class="fas fa-eye mr-1"></i> 123</span>
+            </div>
+            <div>
+                <span class="text-2xl font-bold text-blue-600">$2,500/mo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="real-estate-info">
+            <h1 class="text-2xl md:text-3xl font-bold mb-4">Denizlide Deniz Manzaralı Villa</h1>
+
+            <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+                <div class="flex flex-wrap items-center justify-start space-y-2">
+
+                    <div class="w-full md:w-3/4 lg:w-2/4 flex items-center space-x-2 mb-2 mt-4">
+                        <i class="fas fa-map-marker-alt text-blue-600"></i>
+                        <span class="text-gray-700">Adres: Denizli, Merkez, XYZ Mahallesi, Lorem ipsum dolor sit amet. ABC Cad.</span>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 flex items-center space-x-2 mb-2">
+                        <i class="fas fa-bed text-blue-600"></i>
+                        <span class="text-gray-700">5 Oda</span>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 flex items-center space-x-2 mb-2">
+                        <i class="fas fa-ruler-combined text-blue-600"></i>
+                        <span class="text-gray-700">300 m²</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slide"><img src="https://picsum.photos/800/400?random=10" alt="Image 1"></div>
+                    <div class="slide"><img src="https://picsum.photos/800/400?random=11" alt="Image 2"></div>
+                    <div class="slide"><img src="https://picsum.photos/800/400?random=12" alt="Image 3"></div>
+                    <div class="slide"><img src="https://picsum.photos/800/400?random=13" alt="Image 4"></div>
+                </div>
+                <div class="slider-nav">
+                    <button class="prev-button" onclick="moveSlide(-1)">❮</button>
+                    <button class="next-button" onclick="moveSlide(1)">❯</button>
+                </div>
+            </div>
+
+            <div class="image-gallery" id="imageGallery">
+                <img src="https://picsum.photos/400/300?random=14" alt="Gallery Image 1" class="gallery-image" onclick="openFullscreen(this.src)">
+                <img src="https://picsum.photos/400/300?random=15" alt="Gallery Image 2" class="gallery-image" onclick="openFullscreen(this.src)">
+                <img src="https://picsum.photos/400/300?random=16" alt="Gallery Image 3" class="gallery-image" onclick="openFullscreen(this.src)">
+                <img src="https://picsum.photos/400/300?random=17" alt="Gallery Image 4" class="gallery-image" onclick="openFullscreen(this.src)">
+                <img src="https://picsum.photos/400/300?random=18" alt="Gallery Image 5" class="gallery-image" onclick="openFullscreen(this.src)">
+                <img src="https://picsum.photos/400/300?random=19" alt="Gallery Image 6" class="gallery-image" onclick="openFullscreen(this.src)">
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+                <h3 class="text-lg font-semibold mb-2">İlan Açıklaması</h3>
+                <p class="text-gray-700">
+                    This luxurious villa offers a blend of modern design and comfort. Located in Denizli, it's within walking distance of restaurants, shops, and public transportation. The villa features spacious rooms, high-end finishes, and stunning sea views.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+                <h3 class="text-lg font-semibold mb-2">İlan Detayları</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-bed mr-1"></i> 5 Yatak Odası</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-bath mr-1"></i> 3 Banyo</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-ruler-combined mr-1"></i> 300 m²</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-warehouse mr-1"></i> Villa</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-parking mr-1"></i> Otopark Alanı: Var</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-1"></i> Denizli, Merkez</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-home mr-1"></i> Bina Yaşı: 5</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fa-solid fa-temperature-arrow-up"></i> Isıtma Tipi: Merkezi</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-elevator mr-1"></i> Asansör: Var</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+                <h3 class="text-lg font-semibold mb-2">İlan Özellikleri</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Balkon</li>
+                    <li>Asansör</li>
+                    <li>Merkezi Isıtma</li>
+                    <li>Klima</li>
+                    <li>24/7 Güvenlik</li>
+                    <li>Spor Salonu</li>
+                    <li>Yüzme Havuzu</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="agent-info">
+            <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+                <div class="flex items-center mb-3">
+                    <img src="https://picsum.photos/80/80?random=1" alt="Agent Profile" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-lg font-semibold">John Doe</h3>
+                        <p class="text-gray-700">Emlakçı</p>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+90 555 123 4567</p>
+                    <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i>john.doe@example.com</p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">İletişime Geç</button>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Beğenebileceğiniz Diğer İlanları</h3>
+        
+                <div class="grid grid-cols-1 gap-4">
+
+                    <a href="#" class="block listing-card">
+                        <div class="bg-white rounded-lg shadow-md p-3 hover:shadow-xl cursor-pointer">
+                            <img src="https://picsum.photos/400/200?random=920" 
+                                 alt="Modern Daire" 
+                                 class="w-full h-32 object-cover mb-2 rounded">
+                            <p class="text-gray-700 font-medium">Modern Daire, İstanbul</p>
+                            <p class="text-gray-600">$1,900/mo</p>
+                        </div>
+                    </a>
+        
+                    <a href="#" class="block listing-card">
+                        <div class="bg-white rounded-lg shadow-md p-3 hover:shadow-xl cursor-pointer">
+                            <img src="https://picsum.photos/400/200?random=820" 
+                                 alt="Lüks Villa" 
+                                 class="w-full h-32 object-cover mb-2 rounded">
+                            <p class="text-gray-700 font-medium">Lüks Villa, Antalya</p>
+                            <p class="text-gray-600">$650,000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+        <h3 class="text-lg font-semibold mb-2">Harita</h3>
+        <div id="map" class="h-64 mb-4"></div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+        <h3 class="text-lg font-semibold mb-2">Video Turu</h3>
+        <iframe class="w-full h-64" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="fullscreen-modal" id="fullscreenModal">
+        <span class="close-button" onclick="closeFullscreen()">&times;</span>
+        <img src="" alt="Fullscreen Image" class="fullscreen-image" id="fullscreenImage">
+    </div>
+</div>
