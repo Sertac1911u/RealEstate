@@ -2,5 +2,5 @@
 
 public class ImageCrudService
 {
-    
+    /*TODO: Burayı yap delikanlı*/
 }
