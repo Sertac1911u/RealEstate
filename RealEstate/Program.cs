@@ -12,9 +12,32 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.CustomSchemaIds(type =>
+    {
+        var fullName = type.FullName ?? type.Name;
+        if (type.IsNested)
+        {
+            return $"{type.DeclaringType?.Name}.{type.Name}";
+        }
+        return fullName;
+    });
+});
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+
 
 builder.Services.AddAutoMapper(typeof(EstateMapper), typeof(CategoryMapper));
+
 builder.Services.AddScoped<IEstateCrudService, EstateCrudService>();
 builder.Services.AddScoped<ICategoryCrudService, CategoryCrudService>();
 
