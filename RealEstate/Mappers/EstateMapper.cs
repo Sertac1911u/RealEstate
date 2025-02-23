@@ -6,7 +6,7 @@ namespace RealEstate.Mappers;
 
 public class EstateMapper: Profile
 {
-    EstateMapper()
+    public EstateMapper()
     {
         CreateMap<Estate, EstateDto>();
         CreateMap<EstateDto, Estate>();
