@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using RealEstate.Interfaces.ICrudServices;
 
 namespace RealEstate.Controllers.CrudControllers;
 
@@ -6,5 +8,14 @@ namespace RealEstate.Controllers.CrudControllers;
 [Route("[controller]")]
 public class ImageController: ControllerBase
 {
-    /*TODO: Burayı sen yaz mr Sertaç*/
+    private readonly IImageCrudService _imageCrudService;
+    private readonly IMapper _mapper;
+
+    public ImageController(IImageCrudService imageCrudService, IMapper mapper)
+    {
+        _imageCrudService = imageCrudService;
+        _mapper = mapper;
+    }
+
+
 }
